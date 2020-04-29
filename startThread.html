@@ -1,0 +1,62 @@
+<?php
+header('Content-Type: text/html; charset=utf-8');
+
+session_start();
+
+// 1. If user not logged in, redirect to login page.
+if (empty($_SESSION['user']))
+{
+  header('Location:login.html');
+  exit;
+}
+
+
+
+?>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  <style>
+  </style>
+  <body>
+  <header id="GEFHoved">
+    <mainImg>
+      <img src="josukeGif.gif" alt="Josuke siger hej">
+    </mainImg>
+    <h1>Velkommen til G.E.F Forum</h1>
+    <nav id="LoginNavBar">
+      <!--Hyperlink reference med knap på-->
+      <a href="forum.php"><input type="button" value="Forum" /></a>
+      <a href="logaf.php"><input type="button" value="Log af" /></a>
+    </nav>
+  </header>
+  <br>
+<elementOne>
+
+<form method="post" action="submissions.php">
+<input type="text" name="title" value="Titel">
+<br>
+<br>
+<br>
+<textarea name="submission" cols="30" rows="30" wrap="type"></textarea>
+<br>
+<input type="submit" name="submitButton" value="Submit">
+</form>
+
+
+</elementOne>
+<footer>
+  <p>
+   G.E.F er lavet af Gustav Weber, Emma Rasmussen og Freja Høy heraf navnet G.E.F.
+ </p>
+</footer>
+
+
+
+
+  </body>
+</html>

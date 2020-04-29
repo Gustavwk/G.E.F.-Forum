@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--charset'et gør at vi kan bruge æøå mm-->
+    <meta charset="utf-8">
+    <title>G.E.F. Forum</title>
+  </head>
+  <body>
+    <header id="GEFHoved">
+      <mainImg>
+        <img src="josukeGif.gif" alt="Josuke siger hej">
+      </mainImg>
+      <h1>Velkommen til G.E.F Forum</h1>
+      <nav id="mainNavBar">
+        <!--Hyperlink reference med knap på-->
+        <a href="forum.php"><input type="button" value="Forum" /></a>
+        <a href="logaf.php"><input type="button" value="Log af" /></a>
+      </nav>
+    </header>
+    <footer>
+      <p>
+       G.E.F er lavet af Gustav Weber, Emma Rasmussen og Freja Høy heraf navnet G.E.F.
+      </p>
+    </footer>
+  </body>
+</html>
